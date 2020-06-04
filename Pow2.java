@@ -8,7 +8,7 @@ public class Pow2 {
 
         int i;
 
-        for ( i = 2; i < 66000; i = i * 2 )
+        for ( i = 1; i < 66000; i = i * 2 )
             System.out.println(i + " * 2 =" + " " + (i * 2));
 
 

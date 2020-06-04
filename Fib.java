@@ -5,11 +5,18 @@ public class Fib {
 
         Scanner sc = new Scanner(System.in);
 
-        int f;
-        int e;
+        int f = 0;
+        int e = 1;
+        int fib = 0;
 
-        for (f = 0, e = 1; f < 60000000; f = f + e, e = e + f)
-            System.out.println(f + " + " + e + " = " + (e + f));
+
+        for (int i = 0; i <20; i++) {
+
+            fib = f + e;
+            System.out.println(f + "+" + e + "=" + fib);
+            f = e;
+            e = fib;
+        }
 
 
     }
